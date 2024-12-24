@@ -13,6 +13,9 @@ import { IoWallet } from "react-icons/io5";
 import { FaGlobe } from "react-icons/fa";
 import { IoDocumentText } from "react-icons/io5";
 import { FaShoppingCart } from "react-icons/fa";
+import { FaArrowRightLong } from "react-icons/fa6";
+import { FaFaceGrinBeam } from "react-icons/fa6";
+import { BsThreeDots } from "react-icons/bs";
 import sideNavImg from "./images/sidenav/sidenav-card-background.png";
 
 const assets = {
@@ -31,6 +34,9 @@ const assets = {
     FaGlobe,
     IoDocumentText,
     FaShoppingCart,
+    FaArrowRightLong,
+    FaFaceGrinBeam,
+    BsThreeDots,
     sideNavImg
 }
 

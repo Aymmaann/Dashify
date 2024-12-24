@@ -9,21 +9,8 @@
 }
 
 body {
-    /* background: radial-gradient(circle, #3f4ce1, #191831); */
-    /* background: radial-gradient(circle at 70% 80%, #3f4ce1, #191831); */
-    /* background: radial-gradient(circle at 70% 80%, #3f4ce1 30%, #191831 60%); */
-    /* background: radial-gradient(circle at 70% 80%, #3f4ce1 40%, #2a2e5a 70%, #191831 100%); */
-    /* background: radial-gradient(circle at 70% 80%, #2d3acf 40%, #0e091e 70%, #141427 100%); */
     background-image: url(/src/assets/images/body-background.png);
     background-size: cover;
     color: white;
-    /* background: radial-gradient(circle at 70% 80%, #1b237f 40%, #0e091e 70%, #141427 100%); */
-    /* min-height: 100vh; */
+    /* color: #2d2e65; */
 }
-
-/* .styled-hr {
-    border: none;
-    height: 1px;
-    background: linear-gradient(to right, #1c1e39, #343850, #1c1e39);
-    margin: 0;
-  } */
