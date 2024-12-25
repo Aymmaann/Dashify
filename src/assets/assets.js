@@ -16,7 +16,22 @@ import { FaShoppingCart } from "react-icons/fa";
 import { FaArrowRightLong } from "react-icons/fa6";
 import { FaFaceGrinBeam } from "react-icons/fa6";
 import { BsThreeDots } from "react-icons/bs";
+import { TiSpanner } from "react-icons/ti";
+import { TiTick } from "react-icons/ti";
+import { HiDotsVertical } from "react-icons/hi";
+
+// Images
 import sideNavImg from "./images/sidenav/sidenav-card-background.png";
+import logoXD from "./images/small-logos/logo-xd.svg";
+import logoAtlassian from "./images/small-logos/logo-atlassian.svg";
+import logoSlack from "./images/small-logos/logo-slack.svg";
+import logoSpotify from "./images/small-logos/logo-spotify.svg";
+import logoJira from "./images/small-logos/logo-jira.svg";
+import logoInvision from "./images/small-logos/logo-invision.svg";
+import avatar1 from "./images/avatar1.png";
+import avatar2 from "./images/avatar2.png";
+import avatar3 from "./images/avatar3.png";
+import avatar4 from "./images/avatar4.png";
 
 const assets = {
     FaHome,
@@ -37,7 +52,20 @@ const assets = {
     FaArrowRightLong,
     FaFaceGrinBeam,
     BsThreeDots,
-    sideNavImg
+    TiSpanner,
+    TiTick,
+    HiDotsVertical,
+    sideNavImg,
+    logoXD,
+    logoAtlassian,
+    logoSlack,
+    logoSpotify,
+    logoJira,
+    logoInvision,
+    avatar1,
+    avatar2,
+    avatar3,
+    avatar4
 }
 
 export default assets;

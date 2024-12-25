@@ -4,16 +4,19 @@ import Navbar from '../components/Navbar'
 import assets from "../assets/assets.js"
 import LineChart from '../components/LineChart'
 import CircularProgressBar from '../components/CircularProgressBar'
+import BarChart from '../components/BarChart'
+import DashboardTable from '../components/DashboardTable'
 
 const Dashboard = () => {
   return (
     <div className='flex'>
       <Sidebar />
 
-      <div className='p-6 flex-grow h-[200vh]'>
+      <div className='p-6 flex-grow'>
         <Navbar />
 
         <div>
+          {/* Stats */}
           <div className='flex items-center justify-between mt-6'>
             <div className='flex items-center gap-16 bg-[#0a0c26] p-[17px] rounded-xl'>
               <div>
@@ -137,16 +140,107 @@ const Dashboard = () => {
           </div>
 
           {/* Graphs */}
-          <div className='flex mt-6'>
+          <div className='flex mt-6 gap-5'>
             <div className='bg-gradient-to-br from-[#080d2d] to-[#1f2b6a] p-[22px] rounded-xl'>
               <p className='font-semibold text-lg'>Sales Overview</p>
-              <p className='text-gray-300 text-sm mt-2'><span className='text-green-500 font-semibold'>+5% more</span> in 2021</p>
+              <p className='text-gray-400 text-sm mt-1 mb-2'><span className='text-green-500 font-semibold'>+5% more</span> in 2021</p>
               <LineChart />
             </div>
 
-            <div className='bg-gradient-to-br from-[#080d2d] to-[#1f2b6a] p-[22px] rounded-xl grow'></div>
+            <div className='bg-gradient-to-br from-[#080d2d] to-[#1f2b6a] p-[22px] rounded-xl grow'>
+              <div>
+                <BarChart />
+              </div>
 
-            {/* <div className='w-[451px] h-[448px] rounded-xl bg-gradient-to-br from-[#080d2d] to-[#1f2b6a]'></div> */}
+              <div className='mt-6'>
+                <p className='font-semibold text-lg'>Active Users</p>
+                <p className='text-gray-400 text-sm mt-1 mb-10'><span className='text-green-500 font-semibold'>+(+23)</span> than last week</p>
+              </div>
+
+              <div className='flex items-center justify-between gap'>
+                <div>
+                  <div className='flex items-center gap-1'>
+                    <div className='rounded-lg bg-[#0275ff] p-1.5'>
+                      <assets.IoWallet className='text-[14px]' />
+                    </div>
+                    <p className='text-sm text-gray-400'>Users</p>
+                  </div>
+                  <p className='text-large font-semibold mt-1.5'>32,284</p>
+                  <div className='w-16 bg-[#2d2e5f] rounded-lg h-[3px] mt-2 flex items-center'>
+                    <div className='bg-[#0275ff] h-[6px] w-[40px] rounded-lg'></div>
+                  </div>
+                </div>
+
+                <div>
+                  <div className='flex items-center gap-1'>
+                    <div className='rounded-lg bg-[#0275ff] p-1.5'>
+                      <assets.IoIosRocket className='text-[14px]' />
+                    </div>
+                    <p className='text-sm text-gray-400'>Clicks</p>
+                  </div>
+                  <p className='text-large font-semibold mt-1.5'>2.42M</p>
+                  <div className='w-16 bg-[#2d2e5f] rounded-lg h-[3px] mt-2 flex items-center'>
+                    <div className='bg-[#0275ff] h-[6px] w-[52px] rounded-lg'></div>
+                  </div>
+                </div>
+
+                <div>
+                  <div className='flex items-center gap-1'>
+                    <div className='rounded-lg bg-[#0275ff] p-1.5'>
+                      <assets.FaShoppingCart className='text-[14px]' />
+                    </div>
+                    <p className='text-sm text-gray-400'>Sales</p>
+                  </div>
+                  <p className='text-large font-semibold mt-1.5'>$2,400</p>
+                  <div className='w-16 bg-[#2d2e5f] rounded-lg h-[3px] mt-2 flex items-center'>
+                    <div className='bg-[#0275ff] h-[6px] w-[31px] rounded-lg'></div>
+                  </div>
+                </div>
+
+                <div>
+                  <div className='flex items-center gap-1'>
+                    <div className='rounded-lg bg-[#0275ff] p-1.5'>
+                      <assets.TiSpanner className='text-[14px]' />
+                    </div>
+                    <p className='text-sm text-gray-400'>Items</p>
+                  </div>
+                  <p className='text-large font-semibold mt-1.5'>320</p>
+                  <div className='w-16 bg-[#2d2e5f] rounded-lg h-[3px] mt-2 flex items-center'>
+                    <div className='bg-[#0275ff] h-[6px] w-[40px] rounded-lg'></div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+            
+          </div>
+
+          {/* Projects and Orders Overview */}
+          <div className='flex mt-6 gap-5'>
+            <div className='bg-gradient-to-br from-[#0a0c26] to-[#1d2860] p-[22px] rounded-xl w-[737px]'>
+              <div className='flex justify-between items-center mb-8'>
+                <div>
+                  <p className='font-semibold text-lg'>Projects</p>
+                  <div className='flex items-center gap-2 mt-2'>
+                    <div className='bg-green-600 rounded-full p-[2px]'>
+                      <assets.TiTick className='text-[16px] text-[#070b2b]' />
+                    </div>
+                    <p className='text-gray-400 text-sm'><span className='font-semibold'>30 done</span> this month</p>
+                  </div>
+                </div>
+
+                <div className='transition-all duration-200 ease-in-out hover:bg-[#070b2b] p-2 rounded-full cursor-pointer'>
+                  <assets.HiDotsVertical className='text-[#9ba8bc] text-[22px]' />
+                </div>
+              </div>
+
+              <div className="overflow-x-auto">
+                <DashboardTable />
+              </div>
+            </div>
+
+            <div></div>
           </div>
         </div>
       </div>
