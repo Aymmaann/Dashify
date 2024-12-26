@@ -6,6 +6,7 @@ import LineChart from '../components/LineChart'
 import CircularProgressBar from '../components/CircularProgressBar'
 import BarChart from '../components/BarChart'
 import DashboardTable from '../components/DashboardTable'
+import Footer from '../components/Footer'
 
 const Dashboard = () => {
   return (
@@ -64,8 +65,8 @@ const Dashboard = () => {
           </div>
 
           {/* Intro and circular progress bars */}
-          <div className='flex items-center justify-between mt-6'>
-            <div className="h-[340px] w-[425px] bg-[url('./assets/images/cardimgfree.png')] bg-cover bg-center px-[22px] leading-6 py-8 rounded-xl text-sm font-thin text-gray-300 flex-col">
+          <div className='flex items-center justify-between mt-6 gap-5'>
+            <div className="h-[340px] grow bg-[url('./assets/images/cardimgfree.png')] bg-cover bg-center px-[22px] leading-6 py-8 rounded-xl text-sm font-thin text-gray-300 flex-col">
                 <div className='h-[90%]'>
                   <p className=''>Welcome back,</p>
                   <h1 className='text-3xl font-semibold mb-[18px] text-white mt-1'>Mark Johnson</h1>
@@ -79,7 +80,7 @@ const Dashboard = () => {
                 </div>
             </div>
 
-            <div className='p-[22px] bg-gradient-to-br from-[#080d2d] to-[#1f2b6a] rounded-xl relative w-[266px] h-[340px]'>
+            <div className='p-[22px] bg-gradient-to-br from-[#080d2d] to-[#1f2b6a] rounded-xl relative w-[276px] h-[340px]'>
               <p className='font-semibold text-lg'>Satisfaction Rate</p>
               <p className='text-gray-400 text-sm mt-2'>From all projects</p>
               <div className="flex justify-center mt-6">
@@ -105,7 +106,7 @@ const Dashboard = () => {
               </div>
             </div>
 
-            <div className='bg-gradient-to-br from-[#080d2d] to-[#1f2b6a] p-[22px] rounded-xl w-[320px] h-[340px]'>
+            <div className='bg-gradient-to-br from-[#080d2d] to-[#1f2b6a] p-[22px] rounded-xl w-[340px] h-[340px]'>
               <div className='flex items-center justify-between'>
                 <p className='font-semibold text-lg'>Sales Overview</p>
                 <div className='p-[9px] rounded-xl bg-[#22234b]'>
@@ -154,7 +155,7 @@ const Dashboard = () => {
 
               <div className='mt-6'>
                 <p className='font-semibold text-lg'>Active Users</p>
-                <p className='text-gray-400 text-sm mt-1 mb-10'><span className='text-green-500 font-semibold'>+(+23)</span> than last week</p>
+                <p className='text-gray-400 text-sm mt-1 mb-10'><span className='text-green-500 font-semibold'>(+23)</span> than last week</p>
               </div>
 
               <div className='flex items-center justify-between gap'>
@@ -217,8 +218,8 @@ const Dashboard = () => {
           </div>
 
           {/* Projects and Orders Overview */}
-          <div className='flex mt-6 gap-5'>
-            <div className='bg-gradient-to-br from-[#0a0c26] to-[#1d2860] p-[22px] rounded-xl w-[737px]'>
+          <div className='flex mt-6 gap-5 pb-6'>
+            <div className='bg-gradient-to-br from-[#0a0c26] to-[#1d2860] p-[22px] rounded-xl '>
               <div className='flex justify-between items-center mb-8'>
                 <div>
                   <p className='font-semibold text-lg'>Projects</p>
@@ -240,8 +241,78 @@ const Dashboard = () => {
               </div>
             </div>
 
-            <div></div>
+            <div className='bg-gradient-to-br from-[#0a0c26] to-[#1d2860] rounded-xl grow min-w-[334px] flex-wrap'>
+              <div className='mb-9 px-[22px] pt-[22px]'>
+                <p className='font-semibold text-lg'>Orders Overview</p>
+                <div className='flex items-center gap-1 mt-2'>
+                  <div className='bg-green-600 rounded-full p-[2px]'>
+                    <assets.TiTick className='text-[16px] text-[#070b2b]' />
+                  </div>
+                  <p className='text-gray-400 text-sm'><span className='font-semibold'>+30%</span> this month</p>
+                </div>
+              </div>
+
+              <div>
+                <div className='flex items-center gap-5 mb-7 px-[22px]'>
+                  <assets.FaBell className='text-[#0275ff] text-[20px]' />
+                  <div className='text-gray-400 text-sm font-semibold'>
+                    <p className='text-white'>$2400, Design Changes</p>
+                    <p>22 DEC 7:20 PM</p>
+                  </div>
+                </div>
+
+                <div className='flex items-center gap-5 mb-7 px-[22px]'>
+                  <assets.FaCss3Alt className='text-[#e31a1a] text-[20px]' />
+                  <div className='text-gray-400 text-sm font-semibold'>
+                    <p className='text-white'>New order #1832412</p>
+                    <p>21 DEC 11:06 PM</p>
+                  </div>
+                </div>
+
+                <div className='flex items-center gap-5 mb-7 px-[22px]'>
+                  <assets.FaShoppingCart className='text-[#4399e1] text-[20px]' />
+                  <div className='text-gray-400 text-sm font-semibold'>
+                    <p className='text-white'>Server Payments for April</p>
+                    <p>21 DEC 9:34 PM</p>
+                  </div>
+                </div>
+
+                <div className='flex items-center gap-5 mb-7 px-[22px]'>
+                  <assets.FaCreditCard className='text-[#ffb546] text-[20px]' />
+                  <div className='text-gray-400 text-sm font-semibold'>
+                    <p className='text-white'>New card added for order #4395133</p>
+                    <p>20 DEC 2:20 PM</p>
+                  </div>
+                </div>
+
+                <div className='flex items-center gap-5 mb-7 px-[22px]'>
+                  <assets.FaDropbox className='text-[#9f7aea] text-[20px]' />
+                  <div className='text-gray-400 text-sm font-semibold'>
+                    <p className='text-white'>New card added for order #4395054</p>
+                    <p>18 DEC 4:54 PM</p>
+                  </div>
+                </div>
+
+                <div className='flex items-center gap-3 mb-7 px-[15px]'>
+                  <img src={assets.logoXD} className='w-9' alt="" />
+                  <div className='text-gray-400 text-sm font-semibold'>
+                    <p className='text-white'>New order #4394891</p>
+                    <p>17 DEC 1:34 PM</p>
+                  </div>
+                </div>
+
+                <div className='flex items-center gap-5 mb-7 px-[22px]'>
+                  <assets.MdContactPage className='text-[#9f7aea] text-[20px]' />
+                  <div className='text-gray-400 text-sm font-semibold'>
+                    <p className='text-white'>New card added for order #4395022</p>
+                    <p>15 DEC 12:36 PM</p>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
+
+          <Footer />
         </div>
       </div>
     </div>

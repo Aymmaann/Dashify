@@ -12,5 +12,6 @@ body {
     background-image: url(/src/assets/images/body-background.png);
     background-size: cover;
     color: white;
+    background-color: #040b1d;
     /* color: #2d2e65; */
 }

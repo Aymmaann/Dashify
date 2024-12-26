@@ -19,6 +19,11 @@ import { BsThreeDots } from "react-icons/bs";
 import { TiSpanner } from "react-icons/ti";
 import { TiTick } from "react-icons/ti";
 import { HiDotsVertical } from "react-icons/hi";
+import { FaCss3Alt } from "react-icons/fa";
+import { FaDropbox } from "react-icons/fa";
+import { BsSoundwave } from "react-icons/bs";
+import { FaMoneyBills } from "react-icons/fa6";
+import { MdModeEdit } from "react-icons/md";
 
 // Images
 import sideNavImg from "./images/sidenav/sidenav-card-background.png";
@@ -32,8 +37,13 @@ import avatar1 from "./images/avatar1.png";
 import avatar2 from "./images/avatar2.png";
 import avatar3 from "./images/avatar3.png";
 import avatar4 from "./images/avatar4.png";
+import avatar5 from "./images/avatar5.png";
+import avatar6 from "./images/avatar6.png";
+import masterCard from "./images/logos/mastercard.png";
+import visa from "./images/logos/visa.png";
 
 const assets = {
+    // Icons
     FaHome,
     PiGraphFill,
     FaCreditCard,
@@ -41,7 +51,6 @@ const assets = {
     MdContactPage,
     IoIosRocket,
     FaStar,
-    FaBell,
     IoMdSettings,
     IoPersonCircle,
     IoSearch,
@@ -55,7 +64,15 @@ const assets = {
     TiSpanner,
     TiTick,
     HiDotsVertical,
-    sideNavImg,
+    FaBell,
+    FaCss3Alt,
+    FaDropbox,
+    BsSoundwave,
+    FaMoneyBills,
+    MdModeEdit,
+
+    // Images
+    sideNavImg, 
     logoXD,
     logoAtlassian,
     logoSlack,
@@ -65,7 +82,11 @@ const assets = {
     avatar1,
     avatar2,
     avatar3,
-    avatar4
+    avatar4,
+    avatar5,
+    avatar6,
+    masterCard,
+    visa
 }
 
 export default assets;
