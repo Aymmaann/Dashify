@@ -16,14 +16,14 @@ const Tables = () => {
         <div className='pt-6'>
           <div className='bg-gradient-to-br from-[#0a0c26] to-[#151c40] rounded-xl p-[22px] w-full'>
             <p className='font-semibold text-lg'>Authors Table</p>
-            <div class="overflow-x-auto">
+            <div className="overflow-x-auto">
               <AuthorsTable />
             </div>
           </div>
 
           <div className='bg-gradient-to-br from-[#0a0c26] to-[#151c40] rounded-xl p-[22px] w-full mt-6'>
             <p className='font-semibold text-lg'>Projects Table</p>
-            <div class="overflow-x-auto">
+            <div className="overflow-x-auto">
               <ProjectsTable />
             </div>
           </div>
