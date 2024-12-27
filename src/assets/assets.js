@@ -24,6 +24,12 @@ import { FaDropbox } from "react-icons/fa";
 import { BsSoundwave } from "react-icons/bs";
 import { FaMoneyBills } from "react-icons/fa6";
 import { MdModeEdit } from "react-icons/md";
+import { FaTrash } from "react-icons/fa";
+import { HiCalendarDateRange } from "react-icons/hi2";
+import { FiArrowDown } from "react-icons/fi";
+import { FiArrowUp } from "react-icons/fi";
+import { BsExclamationLg } from "react-icons/bs";
+
 
 // Images
 import sideNavImg from "./images/sidenav/sidenav-card-background.png";
@@ -70,6 +76,11 @@ const assets = {
     BsSoundwave,
     FaMoneyBills,
     MdModeEdit,
+    FaTrash,
+    HiCalendarDateRange,
+    FiArrowDown,
+    FiArrowUp,
+    BsExclamationLg,
 
     // Images
     sideNavImg, 
