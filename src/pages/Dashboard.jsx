@@ -144,7 +144,7 @@ const Dashboard = () => {
           <div className='flex mt-6 gap-5'>
             <div className='bg-gradient-to-br from-[#080d2d] to-[#1f2b6a] p-[22px] rounded-xl'>
               <p className='font-semibold text-lg'>Sales Overview</p>
-              <p className='text-gray-400 text-sm mt-1 mb-2'><span className='text-green-500 font-semibold'>+5% more</span> in 2021</p>
+              <p className='text-gray-400 text-sm mt-1 mb-2'><span className='text-green-500 font-semibold'>+5% more</span> in 2024</p>
               <LineChart />
             </div>
 
