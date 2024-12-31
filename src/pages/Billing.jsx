@@ -44,7 +44,10 @@ const Billing = () => {
                   <assets.BsThreeDots className="text-[22px]" />
                 </div>
 
-                <p className="text-3xl font-bold mt-2">$25,215</p>
+                <div className='flex items-center justify-between'>
+                  <p className="text-3xl font-bold mt-2">$25,215</p>
+                  <img src={assets.graphBilling} alt="" />
+                </div>
               </div>
 
               <div>

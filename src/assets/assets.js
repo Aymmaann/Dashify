@@ -32,6 +32,12 @@ import { FiArrowUp } from "react-icons/fi";
 import { BsExclamationLg } from "react-icons/bs";
 import { IoCubeSharp } from "react-icons/io5";
 import { BsLightningChargeFill } from "react-icons/bs";
+import { MdOutlineElectricCar } from "react-icons/md";
+import { IoMdCodeWorking } from "react-icons/io";
+import { RiPinDistanceFill } from "react-icons/ri";
+import { FaFacebookSquare } from "react-icons/fa";
+import { FaTwitter } from "react-icons/fa";
+import { FaInstagram } from "react-icons/fa";
 
 
 // Images
@@ -51,6 +57,11 @@ import avatar6 from "./images/avatar6.png";
 import masterCard from "./images/logos/mastercard.png";
 import visa from "./images/logos/visa.png";
 import avatarSimple from "./images/avatar-simmmple.png"
+import greenLightning from "./images/shapes/green-lightning.svg"
+import graphBilling from "./images/shapes/graph-billing.svg"
+import profile1 from "./images/profile-1.png"
+import profile2 from "./images/profile-2.png"
+import profile3 from "./images/profile-3.png"
 
 const assets = {
     // Icons
@@ -87,6 +98,12 @@ const assets = {
     BsExclamationLg,
     IoCubeSharp,
     BsLightningChargeFill,
+    MdOutlineElectricCar,
+    IoMdCodeWorking,
+    RiPinDistanceFill,
+    FaFacebookSquare,
+    FaTwitter,
+    FaInstagram,
 
     // Images
     sideNavImg, 
@@ -104,7 +121,12 @@ const assets = {
     avatar6,
     masterCard,
     visa,
-    avatarSimple
+    avatarSimple,
+    greenLightning,
+    graphBilling,
+    profile1,
+    profile2,
+    profile3
 }
 
 export default assets;

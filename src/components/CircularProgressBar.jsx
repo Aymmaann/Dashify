@@ -43,7 +43,7 @@ const CircularProgressBar = ({
       {/* Text in the center (if provided) */}
       {textLines.length > 0 && (
         <div className={`absolute inset-0 flex flex-col items-center justify-center ${dashboard === true? 'gap-0' : 'gap-1.5'}`}>
-          <p className="text-sm font-bold text-gray-300">{dashboard === true? textLines[0] : <assets.BsLightningChargeFill className="text-green-500 text-[24px]" />}</p>
+          <p className="text-sm font-bold text-gray-300">{dashboard === true? textLines[0] : <img src={assets.greenLightning} alt="" />}</p>
           <p className="text-3xl font-bold text-white">{textLines[1]}</p>
           <p className="text-xs text-gray-400">{textLines[2]}</p>
         </div>
