@@ -134,6 +134,7 @@ const Dashboard = () => {
                       percentage={85}
                       color="#0cc495"
                       textLines={["Safety", "9.3", "Total Score"]}
+                      dashboard={true}
                     />
                   </div>
               </div>
@@ -218,7 +219,7 @@ const Dashboard = () => {
           </div>
 
           {/* Projects and Orders Overview */}
-          <div className='flex mt-6 gap-5 pb-6'>
+          <div className='flex mt-6 gap-5'>
             <div className='bg-gradient-to-br from-[#0a0c26] to-[#1d2860] p-[22px] rounded-xl '>
               <div className='flex justify-between items-center mb-8'>
                 <div>

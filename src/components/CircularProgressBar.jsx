@@ -1,11 +1,13 @@
 import React from "react";
+import assets from "../assets/assets.js"
 
 const CircularProgressBar = ({ 
   size = 120, 
   strokeWidth = 10, 
   percentage = 93, 
   color = "#4caf50", 
-  textLines = [] 
+  textLines = [],
+  dashboard = true
 }) => {
   const radius = (size - strokeWidth) / 2; // Calculate the radius
   const circumference = 2 * Math.PI * radius; // Calculate the circumference
@@ -40,10 +42,10 @@ const CircularProgressBar = ({
       </svg>
       {/* Text in the center (if provided) */}
       {textLines.length > 0 && (
-        <div className="absolute inset-0 flex flex-col items-center justify-center">
-          <p className="text-sm font-bold text-gray-300">{textLines[0]}</p>
+        <div className={`absolute inset-0 flex flex-col items-center justify-center ${dashboard === true? 'gap-0' : 'gap-1.5'}`}>
+          <p className="text-sm font-bold text-gray-300">{dashboard === true? textLines[0] : <assets.BsLightningChargeFill className="text-green-500 text-[24px]" />}</p>
           <p className="text-3xl font-bold text-white">{textLines[1]}</p>
-          <p className="text-xs text-gray-300">{textLines[2]}</p>
+          <p className="text-xs text-gray-400">{textLines[2]}</p>
         </div>
       )}
     </div>

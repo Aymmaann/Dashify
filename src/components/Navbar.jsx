@@ -39,7 +39,7 @@ const Navbar = () => {
   const { name, icon: IconComponent } = getActiveLocation() || {};
 
   return (
-    <div className={`z-50 px-4 py-3 flex justify-between items-center bg-[#0a0c26] bg-opacity-60 sticky top-4 rounded-2xl ${scrolled? 'border border-white' : ''}`}>
+    <div className={`z-50 px-4 py-3 flex justify-between items-center bg-[#0a0c26] bg-opacity-60 sticky top-4 rounded-xl ${scrolled? 'border border-white' : ''}`}>
       <div>
         <div className='flex gap-2 items-center'>
           {IconComponent && <IconComponent />}

@@ -1,3 +1,4 @@
+// Icons
 import { FaHome } from "react-icons/fa";
 import { PiGraphFill } from "react-icons/pi";
 import { FaCreditCard } from "react-icons/fa6";
@@ -29,6 +30,8 @@ import { HiCalendarDateRange } from "react-icons/hi2";
 import { FiArrowDown } from "react-icons/fi";
 import { FiArrowUp } from "react-icons/fi";
 import { BsExclamationLg } from "react-icons/bs";
+import { IoCubeSharp } from "react-icons/io5";
+import { BsLightningChargeFill } from "react-icons/bs";
 
 
 // Images
@@ -47,6 +50,7 @@ import avatar5 from "./images/avatar5.png";
 import avatar6 from "./images/avatar6.png";
 import masterCard from "./images/logos/mastercard.png";
 import visa from "./images/logos/visa.png";
+import avatarSimple from "./images/avatar-simmmple.png"
 
 const assets = {
     // Icons
@@ -81,6 +85,8 @@ const assets = {
     FiArrowDown,
     FiArrowUp,
     BsExclamationLg,
+    IoCubeSharp,
+    BsLightningChargeFill,
 
     // Images
     sideNavImg, 
@@ -97,7 +103,8 @@ const assets = {
     avatar5,
     avatar6,
     masterCard,
-    visa
+    visa,
+    avatarSimple
 }
 
 export default assets;
