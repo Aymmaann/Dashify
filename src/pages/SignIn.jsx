@@ -28,7 +28,7 @@ const SignIn = () => {
               <div className='mt-7'>
                 <Toggle text={'Remember me'} justify={'justify-end'} bgColor={'bg-[#0275ff]'} />
               </div>
-              <button type='submit' className='w-full rounded-xl bg-[#0275ff] px-6 py-3 uppercase font-semibold text-sm mt-8 mb-2'>Sign In</button>
+              <button type='submit' className='w-full rounded-xl bg-[#0275ff] px-6 py-3 uppercase font-semibold text-sm mt-8 mb-2 hover:bg-[#6715bc] transition-all duration-200'>Sign In</button>
             </form>
 
             <p className='text-center text-sm text-gray-400 mt-6'>Don't have an account? <Link to='/signup' className='text-white font-semibold'> Sign Up</Link></p>

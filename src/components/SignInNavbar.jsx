@@ -26,7 +26,7 @@ const SignInNavbar = () => {
             </Link>
         </div>
 
-        <div className='px-6 py-3 uppercase text-xs bg-[#0275ff] font-semibold rounded-lg'>buy now</div>
+        <div className='px-6 py-3 uppercase text-xs bg-[#0275ff] font-semibold rounded-lg hover:bg-[#6715bc] transition-all duration-200 cursor-pointer'>buy now</div>
     </div>
   )
 }

@@ -40,6 +40,8 @@ import { FaTwitter } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import { BsPieChart } from "react-icons/bs";
 import { MdKey } from "react-icons/md";
+import { FaFacebook } from "react-icons/fa";
+import { FaApple } from "react-icons/fa";
 
 
 // Images
@@ -65,6 +67,7 @@ import profile1 from "./images/profile-1.png"
 import profile2 from "./images/profile-2.png"
 import profile3 from "./images/profile-3.png"
 import signInImage from "./images/signInImage.png"
+import signUpImage from "./images/signUpImage.png"
 
 const assets = {
     // Icons
@@ -109,6 +112,8 @@ const assets = {
     FaInstagram,
     BsPieChart,
     MdKey,
+    FaFacebook,
+    FaApple,
 
     // Images
     sideNavImg, 
@@ -132,7 +137,8 @@ const assets = {
     profile1,
     profile2,
     profile3,
-    signInImage
+    signInImage,
+    signUpImage
 }
 
 export default assets;
