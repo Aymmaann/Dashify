@@ -4,6 +4,7 @@ import Navbar from '../components/Navbar'
 import assets from '../assets/assets'
 import CircularProgressBar from '../components/CircularProgressBar'
 import Footer from '../components/Footer'
+import Toggle from '../components/Toggle'
 
 const Profile = () => {
   const [options, setOptions] = useState('overview');
@@ -154,50 +155,15 @@ const Profile = () => {
               <p className='font-semibold text-lg mb-3'>Platform Settings</p>
 
               <p className="text-xs text-gray-400 uppercase mb-4 mt-[26px]">Account</p>
-              <div className='flex items-center pb-[14px]'>
-                <div className='w-[40px] h-[20px] rounded-2xl flex justify-end p-0.5 bg-[#0275ff] cursor-pointer' onClick={handleToggle}>
-                  <div className='rounded-full bg-white w-4 h-4'></div>
-                </div>
-                <div className='text-xs text-gray-400 w-[160px] ml-3'>Email me when someone follows me</div>
-              </div>
-              <div className='flex items-center pb-[14px] mt-3'>
-                <div className='w-[40px] h-[20px] rounded-2xl flex justify-start p-0.5 bg-gray-800 cursor-pointer' onClick={handleToggle}>
-                  <div className='rounded-full bg-white w-4 h-4'></div>
-                </div>
-                <div className='text-xs text-gray-400 w-[160px] ml-3'>Email me when someone comments on my post</div>
-              </div>
-              <div className='flex items-center pb-[14px] mt-3'>
-                <div className='w-[40px] h-[20px] rounded-2xl flex justify-end p-0.5 bg-[#0275ff] cursor-pointer' onClick={handleToggle}>
-                  <div className='rounded-full bg-white w-4 h-4'></div>
-                </div>
-                <div className='text-xs text-gray-400 w-[160px] ml-3'>Email me when someone mentions me</div>
-              </div>
+              <Toggle text={'Email me when someone follows me'} justify={'justify-end'} bgColor={'bg-[#0275ff]'} />
+              <Toggle text={'Email me when someone comments on my post'} justify={'justify-start'} bgColor={'bg-gray-800'} />
+              <Toggle text={'Email me when someone mentions me'} justify={'justify-end'} bgColor={'bg-[#0275ff]'} />
 
               <p className="text-xs text-gray-400 uppercase mb-4 mt-[26px]">Application</p>
-              <div className='flex items-center pb-[14px]'>
-                <div className='w-[40px] h-[20px] rounded-2xl flex justify-start p-0.5 bg-gray-800 cursor-pointer' onClick={handleToggle}>
-                  <div className='rounded-full bg-white w-4 h-4'></div>
-                </div>
-                <div className='text-xs text-gray-400 w-[160px] ml-3'>New launches and products</div>
-              </div>
-              <div className='flex items-center pb-[14px] mt-3'>
-                <div className='w-[40px] h-[20px] rounded-2xl flex justify-end p-0.5 bg-[#0275ff] cursor-pointer' onClick={handleToggle}>
-                  <div className='rounded-full bg-white w-4 h-4'></div>
-                </div>
-                <div className='text-xs text-gray-400 w-[160px] ml-3'>Monthly product updates</div>
-              </div>
-              <div className='flex items-center pb-[14px] mt-3'>
-                <div className='w-[40px] h-[20px] rounded-2xl flex justify-end p-0.5 bg-[#0275ff] cursor-pointer' onClick={handleToggle}>
-                  <div className='rounded-full bg-white w-4 h-4'></div>
-                </div>
-                <div className='text-xs text-gray-400 w-[160px] ml-3'>Subscribe to newsletter</div>
-              </div>     
-              <div className='flex items-center pb-[14px] mt-3'>
-                <div className='w-[40px] h-[20px] rounded-2xl flex justify-start p-0.5 bg-gray-800 cursor-pointer' onClick={handleToggle}>
-                  <div className='rounded-full bg-white w-4 h-4'></div>
-                </div>
-                <div className='text-xs text-gray-400 w-[160px] ml-3'>Recieve mails weekly</div>
-              </div>   
+              <Toggle text={'New launches and products'} justify={'justify-start'} bgColor={'bg-gray-800'} />
+              <Toggle text={'Monthly product updates'} justify={'justify-end'} bgColor={'bg-[#0275ff]'} />
+              <Toggle text={'Subscribe to newsletter'} justify={'justify-end'} bgColor={'bg-[#0275ff]'} />
+              <Toggle text={'Recieve mails weekly'} justify={'justify-start'} bgColor={'bg-gray-800'} />
             </div>
 
             <div className='h-full rounded-xl bg-gradient-to-br from-[#0a0c26] to-[#1d2860] p-[22px] flex-grow'>

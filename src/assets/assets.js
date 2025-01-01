@@ -38,6 +38,8 @@ import { RiPinDistanceFill } from "react-icons/ri";
 import { FaFacebookSquare } from "react-icons/fa";
 import { FaTwitter } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
+import { BsPieChart } from "react-icons/bs";
+import { MdKey } from "react-icons/md";
 
 
 // Images
@@ -62,6 +64,7 @@ import graphBilling from "./images/shapes/graph-billing.svg"
 import profile1 from "./images/profile-1.png"
 import profile2 from "./images/profile-2.png"
 import profile3 from "./images/profile-3.png"
+import signInImage from "./images/signInImage.png"
 
 const assets = {
     // Icons
@@ -104,6 +107,8 @@ const assets = {
     FaFacebookSquare,
     FaTwitter,
     FaInstagram,
+    BsPieChart,
+    MdKey,
 
     // Images
     sideNavImg, 
@@ -126,7 +131,8 @@ const assets = {
     graphBilling,
     profile1,
     profile2,
-    profile3
+    profile3,
+    signInImage
 }
 
 export default assets;

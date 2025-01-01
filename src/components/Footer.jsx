@@ -1,10 +1,10 @@
 import React from 'react'
 
-const Footer = () => {
+const Footer = ({flexDirection = 'flex'}) => {
   return (
-    <div className='flex justify-between items-center mt-4 py-4'>
-        <div className='text-sm'>@2024, Made with ❤️ by Ayman</div>
-        <ul className='flex gap-12 text-sm pr-1'>
+    <div className={`${flexDirection} justify-between items-center mt-4 py-4`}>
+        <div className={`text-sm ${flexDirection === 'flex-col'? 'text-center' : ''}`}>@2024, Made with ❤️ by Ayman</div>
+        <ul className={`flex gap-12 text-sm pr-1 ${flexDirection === 'flex-col'? 'mt-5 justify-center' : ''}`}>
             <li>Marketplace</li>
             <li>Blog</li>
             <li>License</li>
