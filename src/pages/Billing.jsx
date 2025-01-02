@@ -170,7 +170,7 @@ const Billing = () => {
             </div>
           </div>
 
-          {/* Bottom Side */}
+          {/* Bottom Grid */}
           <div className="h-[627px] grid grid-cols-10 gap-5 mt-6">
             <div className="p-[22px] rounded-xl bg-gradient-to-br from-[#0a0c26] to-[#151c40] col-span-6">
               <p className="text-lg font-semibold mt-2">Billing Information</p>
