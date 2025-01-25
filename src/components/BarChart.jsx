@@ -19,7 +19,7 @@ const BarChart = () => {
         label: 'Sales',
         data: [330, 250, 110, 300, 490, 350, 270, 130, 425],
         backgroundColor: '#0275ff',
-        borderRadius: 8,
+        borderRadius: ,
         borderSkipped: false,
         barThickness: 8,
       },
